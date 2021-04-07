@@ -7,12 +7,10 @@ Projeto desenvolvido em Spring Boot e Angular.
 
 ### Configurações necessárias
 
-```shell
-* [Java 11]
-* [Maven]
-* [Node]
-* [Angular]
-```
+* [Java 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+* [Maven](https://maven.apache.org/)
+* [Node](https://nodejs.org/pt-br/download/)
+* [Angular](https://cli.angular.io/)
 
 ### Baixar o projeto 
 
@@ -58,9 +56,3 @@ Body:
 {
   "opening_crawl": "Teste"
 }
-
-
-[Java 11]: <https://www.oracle.com/java/technologies/javase-jdk11-downloads.html>
-[Maven]: <https://maven.apache.org/>
-[Node]: <https://nodejs.org/pt-br/download/>
-[Angular]: <https://cli.angular.io/>
