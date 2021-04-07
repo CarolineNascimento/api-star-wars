@@ -1,0 +1,32 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8" *ngIf="result">
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Título do filme:</label>
+      <label class="col-form-label">{{result.title}}</label>
+    </div> 
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Diretor:</label>
+      <label class="col-form-label">{{result.director}}</label>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Produtor:</label>
+      <label class="col-form-label">{{result.producer}}</label>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Versão:</label>
+      <label class="col-form-label" [(ngModel)]="result.version">{{result.version}}</label>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label">Descrição:</label>
+      <textarea class="form-control" rows="2" [(ngModel)]="result.opening_crawl"></textarea>
+    </div>
+
+    <div class="form-group row">
+      <button (click)="updateDescription()" class="btn btn-primary mb-3">Alterar Descrição</button>
+    </div>
+
+    <div class="alert alert-success form-group row" role="alert" *ngIf="returnUpdate === 'sucess'">
+      Descrição atualizada com sucesso!
+    </div>
+  </div>
+  </div>
